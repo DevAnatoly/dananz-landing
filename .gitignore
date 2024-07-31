@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+
+#Описание проекта
+README.md
+
+# Файлы конфигурации сборки
+gulpfile.js.map
+gulpfile.js
+package-lock.json
+package.json
+
+# Логи
+*.log
+
+# .env файл
+.env
+
+# Прочие временные файлы
+.DS_Store
+Thumbs.db
