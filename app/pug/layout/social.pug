@@ -1,0 +1,18 @@
+mixin social-icon(id)
+    svg.social__icon
+        use(xlink:href=`sprites.svg#${id}`)
+.social
+    p.social__title Follow us On
+    ul.social__list
+        li.social__list-item
+            a(href="#!").social__list-link
+                +social-icon('fb')
+        li.social__list-item
+            a(href="#!").social__list-link
+                +social-icon('insta')
+        li.social__list-item
+            a(href="#!").social__list-link
+                +social-icon('tiktok')
+        li.social__list-item
+            a(href="#!").social__list-link
+                +social-icon('youtube')

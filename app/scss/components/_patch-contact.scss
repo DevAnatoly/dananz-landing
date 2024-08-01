@@ -1,0 +1,29 @@
+.patch-contact{
+    background-color: $mainColorBlue;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 155px;
+    }
+    &__text{
+        font-family: 'Poppins-SemiBold';
+        font-size: rem(36);
+        line-height: 1.7;
+        font-weight: 600;
+        color: $mainColorWhite;
+        flex-basis: 613px;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px 0;
+        flex-basis: 432px;
+        &-text{
+            color: $colorGrayscaleLight;    
+        }
+    }
+}

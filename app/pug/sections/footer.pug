@@ -1,0 +1,17 @@
+footer.footer
+    .footer__inner
+        .footer__top
+            include ../layout/patch-contact.pug
+        .footer__bottom
+            .container
+                .footer__bottom-inner
+                    .footer__bottom-content
+                        include ../layout/logo.pug
+                        p.footer__bottom-content-text.subtitle One of the best furniture agency.
+                    .footer__bottom-form
+                        p.footer__bottom-form-title Enter  your email to get the laterst news
+                        input(type="text" placeholder="Email Address").footer__bottom-form-input
+                        buttom.footer__bottom-form-btn
+                            svg.footer__bottom-form-icon
+                                use(xlink:href="sprites.svg#arrow-form")
+                    include ../layout/social.pug

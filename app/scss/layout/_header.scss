@@ -1,0 +1,30 @@
+.header{
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 360px;
+    }
+}
+.menu{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 74px;
+        font-family: 'Poppins-Regular';
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: 1.6;
+        &-item{
+            transition: text-decoration 2s ease;
+            &:hover:not(:last-child){
+                text-decoration: underline;
+            }
+        }
+        &-link{
+            color: $colorGrayscale50;
+            text-wrap: nowrap;
+        }
+    }
+}

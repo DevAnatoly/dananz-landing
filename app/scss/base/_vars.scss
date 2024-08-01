@@ -3,4 +3,17 @@ $browser-context: 16; // Default
 	@function rem($pixels, $context: $browser-context) {
         @return calc(($pixels/16)) + rem;
 	}
+	@function em($remValue, $context: $browser-context) {
+		// Преобразуем rem в px и затем в em (1em = текущий размер шрифта)
+		@return ($remValue * $context / $context) + em;
+	}
 
+$mainColorBlue: #2C3878;
+$mainColorWhite: #FFF;
+
+$colorGrayscaleBlack: #000000;
+$colorGrayscale70: #141414;
+$colorGrayscale50: #333333;
+$colorGrayscale30: #3C3C3C;
+$colorGrayscale10: #9C9C9C;
+$colorGrayscaleLight: #D9D9D9;

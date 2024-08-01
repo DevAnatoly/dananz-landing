@@ -1,0 +1,39 @@
+.social{
+    position: absolute;
+    bottom: -53px;
+    right: 9px;
+    display: inline-block;
+    &__title{
+        font-family: 'Poppins-Regular';
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0 33px;
+        &-link{
+            position: relative;
+            &::before{
+                content: '';
+                background-color: $colorGrayscaleLight;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                position: absolute;
+                top: -10px;
+                left: -4px;
+                z-index: 1;
+            }
+        }
+    }
+    &__icon{
+        width: 24px;
+        height: 24px;
+        z-index: 2;
+        position: relative;
+    }
+}

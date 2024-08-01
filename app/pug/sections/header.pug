@@ -1,0 +1,21 @@
+include ../layout/button.pug
+header.header
+        .container
+            .header__inner
+                include ../layout/logo.pug
+                //- a.logo(href="#!")
+                //-     svg.logo-icon
+                //-         use(xlink:href="sprites.svg#logo")
+                nav.menu
+                    ul.menu__list
+                        li.menu__list-item
+                            a.menu__list-link(href="#!") Home
+                        li.menu__list-item
+                            a.menu__list-link(href="#!") About Us
+                        li.menu__list-item
+                            a.menu__list-link(href="#!") Services
+                        li.menu__list-item
+                            a.menu__list-link(href="#!") Our Teams
+                        li.menu__list-item
+                            +button('Contact Us', '#2C3878', '#FFFFFF')
+                            
