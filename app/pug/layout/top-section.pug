@@ -1,0 +1,11 @@
+mixin top-section(className, title, text, img)
+    section(class=className)
+        .container
+            div(class=`${className}__inner`)
+                h2(class=`${className}__title`) #{title}
+                p(class=`${className}__text`) #{text}
+                picture(class=`${className}__image`)
+                    source(media="(min-width: 1440px)", srcset=`${img}-1440.webp`)
+                    source(media="(min-width: 1200px)", srcset=`${img}-1200.webp`)
+                    source(media="(min-width: 768px)", srcset=`${img}-768.webp`)
+                    img(src=`${img}.jpg`, alt=`images ${title}`)

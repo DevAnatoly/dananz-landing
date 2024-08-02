@@ -3,9 +3,6 @@ header.header
         .container
             .header__inner
                 include ../layout/logo.pug
-                //- a.logo(href="#!")
-                //-     svg.logo-icon
-                //-         use(xlink:href="sprites.svg#logo")
                 nav.menu
                     ul.menu__list
                         li.menu__list-item
@@ -18,4 +15,5 @@ header.header
                             a.menu__list-link(href="#!") Our Teams
                         li.menu__list-item
                             +button('Contact Us', '#2C3878', '#FFFFFF')
-                            
+                .burger-menu
+                    img(src="images/burger-menu.svg", alt="mobile menu")                     

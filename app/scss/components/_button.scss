@@ -6,4 +6,7 @@
     font-weight: 500;
     padding: 1em 2.2857142857142856em;
     text-wrap: nowrap;
+    @media(max-width: 400px){
+        font-size: rem(20);
+    }
 }
