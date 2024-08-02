@@ -1,0 +1,35 @@
+.hero{
+    margin-top: 100px;
+    &__inner{
+        position: relative;
+        &::before{
+            content: '2022\0a ALL RIGHT RESERVED';
+            white-space: pre;
+            position: absolute;
+            transform: rotate(-90deg);
+            top: 175px;
+            right: -60px;
+         }
+        &::after{
+            content: '';
+            @include line(683px);
+            top: 50px;
+            right: 0;
+        }
+        & .achievements{
+            top: 141px;
+            right: 142px;
+        }
+    }
+    &__title{
+        max-width: 681px;
+        text-align: left;
+    }
+    &__content{
+        margin-top: 46px;
+    }
+    &__image{
+        max-width: 1200px;
+        height: auto;
+    }
+}

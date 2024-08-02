@@ -1,0 +1,11 @@
+section.hero
+    .container
+        .hero__inner
+            h1.hero__title.h1 Design your interor with high quality.
+            .hero__content
+                picture.hero__image
+                    source(media="(min-width: 1440px)", srcset="images/home-kitchen-1440.webp")
+                    source(media="(min-width: 1200px)", srcset="images/home-kitchen-1200.avif")
+                    source(media="(min-width: 768px)", srcset="images/home-kitchen-768.avif")
+                    img(src="images/home-kitchen.jpg", alt="kitchen image")
+            include ../layout/achievements.pug

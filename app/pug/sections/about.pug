@@ -1,0 +1,19 @@
+section.about
+    .container
+        .about__inner
+            h2.about__title.h2 ABOUT
+            p.about__subtitle.subtitle “We're one of the best furniture agency. Prioritizing customers and making purchases easy are the hallmarks of our agency.”
+            .about__content
+                picture.about__image
+                    source(media="(min-width: 1440px)", srcset="images/about-1440.webp")
+                    source(media="(min-width: 1200px)", srcset="images/about-1200.avif")
+                    source(media="(min-width: 768px)", srcset="images/about-768.avif")
+                    img(src="images/about.jpg", alt="about image")
+                .about__box
+                    p.about__box-text Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+                    +button('Learn more', '#2C3878', '#FFFFFF')
+                .about__patch
+                    img(src="images/user-img.webp", alt="user photo").about__patch-img
+                    dl.about__patch-data
+                        dt Arga Danaan
+                        dd CEO of Dananz

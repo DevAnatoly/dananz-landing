@@ -1,0 +1,78 @@
+.product{
+    margin-top: 160px;
+    &__inner{
+        position: relative;
+        &::after{
+            content: '';
+            @include line(504px);
+            top: 8px;
+            right: 600px;
+        }
+    }
+    &__subtitle{
+        display: inline-block;
+        width: 314px;
+        margin-top: 20px;
+    }
+    &__text{
+        display: inline-block;
+        width: 446px;
+        margin-left: 409px;
+        @extend %fontRegular18Gray10;
+        line-height: 2;
+    }
+    &__list{
+        width: 100%;
+        min-height: 640px;
+        margin-top: 73px;
+        counter-reset: list;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 125px 0;
+        font-family: 'Poppins-SemiBold';
+        font-size: rem(32);
+        line-height: 1.4;
+        font-weight: 600;
+        color: $colorGrayscale50;
+        & .product__list-item:nth-child(1){
+            & .product__list-link{
+                margin-left: 6px;
+            }
+        }
+        &-item{
+            counter-increment: list;
+            &::before{
+                content: counter(list, decimal-leading-zero) " ";
+                margin-right: 73px;
+            }
+        }
+        &-link{
+            display: inline-block;
+            width: 470px;
+            color: inherit;
+            position: relative;
+            &::after{
+                content: '';
+                width: 32px;
+                height: 32px;
+                background-image: url('../../images/arrow-right.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 8px;
+                right: -610px;
+            }
+            &::before{
+                position: absolute;
+                content: 'the use of simple and limited elements to get the best effect or impression.';
+                bottom: -82px;
+                left: 0;
+                font-family: 'Poppins-Regular';
+                font-weight: 400;
+                font-size: rem(18);
+                line-height: 1.6;      
+            }
+        }
+    }
+}

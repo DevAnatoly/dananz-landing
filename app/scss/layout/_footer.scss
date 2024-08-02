@@ -1,4 +1,5 @@
 .footer{
+    margin-top: 160px;
     &__inner{
 
     }
@@ -7,9 +8,7 @@
         &-inner{
             position: relative;
             display: flex;
-            // justify-content: space-between;
             align-items: flex-start;
-            // gap: 0 279px;
         }
         &-content{
             margin-right: 164px;

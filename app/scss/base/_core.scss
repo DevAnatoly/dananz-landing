@@ -7,7 +7,8 @@ html{
     margin: 0;
 }
 
-ul[class]{
+ul[class],
+ol[class]{
     list-style: none;
 }
 
@@ -21,15 +22,40 @@ button:hover{
 
 body{
     margin: 0;
-    padding: 42px 0 84px;
+    padding: 42px 0 129px;
     font-size: rem(18);
     font-family: 'Poppins-Regular';
     line-height: 1.6;
     font-weight: 400;
+    background-color: $mainColorWhite;
 }
-
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
 .container{
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 10px;
+}
+h1{
+    font-family: 'Poppins-Bold';
+    font-size: rem(72);
+    line-height: 1.4;
+    font-weight: 700;
+    color: $colorGrayscale50;
+}
+h2{
+    font-family: 'Poppins-Medium';
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $colorGrayscaleBlack;
+}
+.subtitle{
+    font-family: 'Poppins-SemiBold';
+    font-size: rem(36);
+    line-height: 1.7;
+    font-weight: 600;
 }
