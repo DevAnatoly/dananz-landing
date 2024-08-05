@@ -2,11 +2,11 @@ extends layout/base.pug
 
 block header
     include sections/header.pug
-//- block content
-//-     include sections/hero.pug
-//-     include sections/about.pug
-//-     include sections/service.pug
-//-     include sections/product.pug
-//-     include sections/material.pug
-//- block footer
-//-     include sections/footer.pug
+block content
+    include sections/hero.pug
+    include sections/about.pug
+    include sections/service.pug
+    include sections/product.pug
+    include sections/material.pug
+block footer
+    include sections/footer.pug

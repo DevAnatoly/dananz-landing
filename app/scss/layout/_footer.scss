@@ -5,22 +5,48 @@
     // }
     &__bottom{
         margin-top: 80px;
+        @media(max-width: 1200px){
+            margin-top: 50px;
+        }
         &-inner{
             position: relative;
             display: flex;
             align-items: flex-start;
+            @media(max-width: 1200px){
+                gap: 0 60px;
+                justify-content: space-evenly;
+            }
+            @media(max-width: 1050px){
+                gap: 40px 0;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
         }
         &-content{
             margin-right: 164px;
+            @media(max-width: 1200px){
+                margin-right: 0;
+            }
         }
         &-content-text{
             flex-basis: 481px;
             margin-top: 2px;
+            @media(max-width: 1200px){
+                max-width: 481px;
+            }
         }
         &-form{
             margin-top: 32px;
             flex-basis: 440px;
             position: relative;
+            @media(max-width: 1050px){
+                flex-basis: 0;
+            }
+            @media(max-width: 450px){
+                margin-top: 5px;
+            }
             &-title{
                 padding-left: 24px;
                 position: relative;
@@ -33,6 +59,9 @@
                     position: absolute;
                     top: 7px;
                     left: 0;
+                    @media(max-width: 450px){
+                        top: 4px;
+                    }
                 }
             }
             &-input{

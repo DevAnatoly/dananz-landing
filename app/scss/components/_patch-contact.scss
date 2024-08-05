@@ -7,6 +7,17 @@
         justify-content: center;
         align-items: center;
         gap: 0 155px;
+        @media(max-width: 1200px){
+            gap: 0 80px;
+            justify-content: space-evenly;
+        }
+        @media(max-width: 1050px){
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px 0;
+        }
     }
     &__text{
         font-family: 'Poppins-SemiBold';
@@ -15,6 +26,18 @@
         font-weight: 600;
         color: $mainColorWhite;
         flex-basis: 613px;
+        @media(max-width: 1200px){
+            font-size: rem(30);
+            line-height: 1.5;
+            max-width: 481px;
+        }
+        @media(max-width: 1050px){
+            font-size: rem(30);
+            line-height: 1.5;
+            max-width: 100%;
+            flex-basis: 0;
+            text-align: center;
+        }
     }
     &__block{
         display: flex;
@@ -22,6 +45,11 @@
         align-items: flex-start;
         gap: 20px 0;
         flex-basis: 432px;
+        @media(max-width: 1050px){
+            align-items: center;
+            flex-basis: 0;
+            text-align: center;
+        }
         &-text{
             color: $colorGrayscaleLight;    
         }

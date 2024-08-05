@@ -1,5 +1,11 @@
 .about{
     margin-top: 160px;
+    @media(max-width: 550px){
+        margin-top: 130px;
+    }
+    @media(max-width: 400px){
+        margin-top: 90px;
+    }
     &__inner{
         position: relative;
         &::after{
@@ -7,6 +13,26 @@
             @include line(529px);
             top: 8px;
             right: 601px;
+            @media(max-width: 1200px){
+                @include line(450px);
+                left: 20%;
+                right: 0%;
+            }
+            @media(max-width: 768px){
+                @include line(350px);
+                left: 20%;
+                right: 0%;
+            }
+            @media(max-width: 550px){
+                @include line(250px);
+                left: 20%;
+                right: 0%;
+            }
+            @media(max-width: 400px){
+                @include line(150px);
+                left: 20%;
+                right: 0%;
+            }
         }
     }
     &__subtitle{
@@ -19,14 +45,30 @@
         align-items: center;
         gap: 0 94px;
         position: relative;
+        @media(max-width: 400px){
+            gap: 0 40px;
+        }
     }
     &__image{
         max-width: 883px;
         height: auto;
         object-fit: cover;
+        & img{
+            @media(max-width: 1200px){
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+            @media(max-width: 550px){
+                height: 500px;
+            }
+        }
     }
     &__box{
         margin-top: 94px;
+        @media(max-width: 550px){
+            margin-top: 158px;
+        }
         &-text{
             @extend %fontRegular18Gray10;
             margin-bottom: 40px;
@@ -45,6 +87,17 @@
         align-items: center;
         background-color: $mainColorWhite;
         box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.05);
+        @media(max-width: 1200px){
+            left: 45%;
+        }
+        @media(max-width: 550px){
+            left: 20%;
+            padding: 19px 0px 19px 0px;
+            width: 240px;
+        }
+        @media(max-width: 400px){
+            width: 222px;
+        }
         &-img{
             width: 51px;
             height: 56px;

@@ -31,11 +31,17 @@ body{
     @media(max-width: 1200px){
         padding: 22px 0 65px;  
     }
-    @media(max-width: 1024px){
-        padding: 15px 0 55px;  
+    @media(max-width: 1050px){
+        padding: 15px 0 170px;  
     }
     @media(max-width: 768px){
-        padding: 10px 0 45px;  
+        padding: 10px 0 170px;  
+    }
+    @media(max-width: 450px){
+        font-size: rem(15);  
+    }
+    @media(max-width: 450px){
+        font-size: rem(14);  
     }
 }
 h1,h2,h3,h4,h5,h6,p{
@@ -53,6 +59,15 @@ h1{
     line-height: 1.4;
     font-weight: 700;
     color: $colorGrayscale50;
+    @media(max-width: 1200px){
+        font-size: rem(62); 
+    }
+    @media(max-width: 1050px){
+        font-size: rem(52); 
+    }
+    @media(max-width: 768px){
+        font-size: rem(42); 
+    }
 }
 h2{
     font-family: 'Poppins-Medium';
@@ -67,4 +82,8 @@ h2{
     font-size: rem(36);
     line-height: 1.7;
     font-weight: 600;
+    @media(max-width: 1200px){
+        font-size: rem(30);
+        line-height: 1.5;
+    }
 }

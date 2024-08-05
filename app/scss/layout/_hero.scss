@@ -1,5 +1,8 @@
 .hero{
     margin-top: 100px;
+    @media(max-width: 400px){
+        margin-top: 70px;
+    }
     &__inner{
         position: relative;
         &::before{
@@ -9,27 +12,78 @@
             transform: rotate(-90deg);
             top: 175px;
             right: -60px;
+            @media(max-width: 768px){
+                right: -9%;
+            }
+            @media(max-width: 400px){
+                content: '2022 ALL RIGHT RESERVED';
+                white-space: initial;
+                right: 0%;
+                top: 260px;
+                font-size: rem(8);
+                transform: none;
+            }
          }
         &::after{
             content: '';
             @include line(683px);
             top: 50px;
             right: 0;
+            @media(max-width: 1200px){
+                @include line(393px);
+            }
+            @media(max-width: 1050px){
+                @include line(40%);
+            }
         }
         & .achievements{
             top: 141px;
             right: 142px;
+            @media(max-width: 768px){
+                top: 181px;
+                right: 102px;
+            }
+            @media(max-width: 400px){
+                top: 191px;
+                left: 0;
+            }
         }
     }
     &__title{
         max-width: 681px;
         text-align: left;
+        @media(max-width: 1200px){
+            max-width: 430px;
+        }
+        @media(max-width: 768px){
+            max-width: 330px; 
+        }
     }
     &__content{
         margin-top: 46px;
+        @media(max-width: 1200px){
+            margin-top: 128px;
+        }
+        @media(max-width: 400px){
+            margin-top: 102px;
+        }
     }
     &__image{
-        max-width: 1200px;
-        height: auto;
+        display: block;
+        width: 100%;
+        height: 513px;
+        @media(max-width: 768px){
+            height: 313px;
+        }
+        @media(max-width: 400px){
+            height: 350px;
+        }
+        & img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 }

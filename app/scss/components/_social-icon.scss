@@ -3,6 +3,17 @@
     bottom: -53px;
     right: 9px;
     display: inline-block;
+    @media(max-width: 1200px){
+        right: 6%;
+        bottom: -100px;
+    }
+    @media(max-width: 1050px){
+        right: initial;
+        bottom: -38%;
+        left: 50%;
+        transform: translate(-50%);
+        display: block;
+    }
     &__title{
         font-family: 'Poppins-Regular';
         font-weight: 400;
@@ -27,6 +38,12 @@
                 top: -8px;
                 left: -4px;
                 z-index: 1;
+                @media(max-width: 1050px){
+                    top: -9px;
+                }
+                @media(max-width: 446px){
+                    top: -13px;
+                }
             }
         }
     }
