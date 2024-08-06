@@ -1,0 +1,13 @@
+- var items = [{imgSrc: 'images/interior-design.jpg', subtitle: 'Interior design', text: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'},{imgSrc: 'images/consultant.jpg', subtitle: 'Consultant', text: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'},{imgSrc: 'images/construction-consultant.jpg', subtitle: 'Construction consultant', text:'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'}];
+section.service-page-achevement
+    .container
+        .service-page-achevement__inner
+            h2.service-page-achevement__title.h2 ACHIEVEMENT
+            each item in items
+                .service-page-achevement__item
+                    picture.service-page-achevement__item-image
+                        source(media="(min-width: )", srcset="")
+                        img(src=item.imgSrc, alt=item.subtitle)
+                    .service-page-achevement__item-content
+                        p.service-page-achevement__item-subtitle.subtitle= item.subtitle
+                        p.service-page-achevement__item-text= item.text

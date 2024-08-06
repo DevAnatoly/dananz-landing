@@ -1,0 +1,13 @@
+- var services = [{imgSrc: 'images/high-quality.svg', title: 'High Quality', text: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'},{imgSrc: 'images/professional-designer.svg', title: 'Professional Designer', text: 'Get the best value for your money with our competitive pricing strategies.'},{imgSrc: 'images/best-services.svg', title: 'The Best Services', text: 'Work with our designers to create a unique and personalized space that reflects your style.'}];
+section.choose-us
+    .container
+        .choose-us__inner
+            h2.choose-us__title.h2 SERVICE
+            p.choose-us__subtitle.subtitle Why Choose Us
+            p.choose-us__text Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+            .choose-us__items
+                each service in services
+                    .choose-us__item
+                        img(src=service.imgSrc, alt=service.title).choose-us__item-img
+                        .choose-us__item-title= service.title
+                        .choose-us__item-text= service.text
