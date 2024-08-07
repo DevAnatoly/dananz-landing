@@ -6,7 +6,9 @@ section.service-page-achevement
             each item in items
                 .service-page-achevement__item
                     picture.service-page-achevement__item-image
-                        source(media="(min-width: )", srcset="")
+                        source(media="(min-width: 1440px)", srcset=item.imgSrc)
+                        source(media="(min-width: 1200px)", srcset=item.imgSrc)
+                        source(media="(min-width: 768px)", srcset=item.imgSrc)
                         img(src=item.imgSrc, alt=item.subtitle)
                     .service-page-achevement__item-content
                         p.service-page-achevement__item-subtitle.subtitle= item.subtitle

@@ -1,0 +1,14 @@
+- var items = [{imgSrc: 'images/photo-1.webp', name: 'Shoo Phar Dhie', job: 'CEO'},{imgSrc: 'images/photo-2.webp', name: 'Shoo Phar Dhie', job: 'CEO'},{imgSrc: 'images/photo-3.webp', name: 'Shoo Phar Dhie', job: 'CEO'},{imgSrc: 'images/photo-4.webp', name: 'Shoo Phar Dhie', job: 'CEO'},{imgSrc: 'images/photo-5.webp', name: 'Shoo Phar Dhie', job: 'CEO'},{imgSrc: 'images/photo-6.webp', name: 'Shoo Phar Dhie', job: 'CEO'},{imgSrc: 'images/photo-7.webp', name: 'Shoo Phar Dhie', job: 'CEO'},{imgSrc: 'images/photo-8.webp', name: 'Shoo Phar Dhie', job: 'CEO'}]
+section.team-page
+    .container
+        .team-page__inner
+            h2.team-page__title.h2 Designer
+            p.team-page__subtitle.subtitle Creative Person
+            p.team-page__text Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+            .team-page__items
+                each item in items
+                    .team-page__item
+                        img(src=item.imgSrc, alt=item.name)
+                        dl.team-page__item-description
+                            dt=item.name
+                            dd=item.job
