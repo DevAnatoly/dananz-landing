@@ -1,14 +1,9 @@
 # Node.js
 node_modules/
 
-#Описание проекта
-README.md
-
 # Файлы конфигурации сборки
 gulpfile.js.map
-gulpfile.js
 package-lock.json
-package.json
 
 # Логи
 *.log
