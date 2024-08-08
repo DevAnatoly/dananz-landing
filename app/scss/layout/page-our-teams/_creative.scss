@@ -71,4 +71,21 @@
             width: 258px;
         }
     }
+    @media(max-width: 550px){
+        &__item:nth-child(1n + 4) {
+            display: none;
+        }
+    }
+}
+.button-box{
+    display: none;
+    @media(max-width: 1200px){
+        display: block;
+    }
+    & button-prev{
+        background-color: red;
+    }
+    & button-next{
+        background-color: red;
+    }
 }
