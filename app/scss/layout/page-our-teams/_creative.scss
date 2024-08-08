@@ -77,15 +77,3 @@
         }
     }
 }
-.button-box{
-    display: none;
-    @media(max-width: 1200px){
-        display: block;
-    }
-    & button-prev{
-        background-color: red;
-    }
-    & button-next{
-        background-color: red;
-    }
-}
