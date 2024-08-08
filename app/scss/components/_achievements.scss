@@ -8,6 +8,10 @@
     max-height: 32.8125em;
     background-color: $mainColorBlue;
     color: $mainColorWhite;
+    animation-duration: 1s;
+    animation-name: popup;
+    animation-iteration-count: 1;
+    animation-direction: normal;
     @media(max-width: 1200px){
         font-size: rem(15);
     }
@@ -36,3 +40,13 @@
         }
     }
 }
+
+@keyframes popup {
+    from {
+      translate: 0vw 30vh;
+    }
+  
+    to {
+      translate: 0 0;
+    }
+  }

@@ -47,9 +47,9 @@
             text-transform: uppercase;
         }
         &-item{
-            transition: text-decoration 2s ease;
+            transition: font-weight .3s ease;
             &:hover:not(:last-child){
-                text-decoration: underline;
+                font-weight: 700;
             }
         }
         &-link{
