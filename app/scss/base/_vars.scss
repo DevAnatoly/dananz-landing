@@ -31,3 +31,10 @@ $colorGrayscaleLight: #D9D9D9;
 	color: $colorGrayscale10;
 	// margin-bottom: 40px;
 }
+%fontSemiBold24Grayscale50{
+	font-family: 'Poppins-SemiBold';
+	font-size: rem(24);
+	color: $colorGrayscale50;
+	font-weight: 600;
+	line-height: 1.4;
+}

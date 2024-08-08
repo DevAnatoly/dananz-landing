@@ -1,0 +1,84 @@
+.contact-us-page-contact{
+    margin-top: 100px;
+    @media(max-width: 400px){
+        margin-top: 70px;
+    }
+    &__title{
+        font-family: 'Poppins-Bold';
+        font-weight: 700;
+        font-size: rem(56);
+        line-height: 1.4;
+        text-transform: capitalize;
+        text-align: center;
+        @media(max-width: 1200px){
+            font-size: rem(50);
+        }
+    }
+    &__text{
+        text-align: center;
+        margin-top: 36px;
+        max-width: 518px;
+        margin-left: auto;
+        margin-right: auto;
+        @media(max-width: 1200px){
+            margin-top: 32px;
+        }
+        @media(max-width: 768px){
+            margin-top: 28px;
+        }
+    }
+    &__form{
+        margin-top: 31px;
+        max-width: 840px;
+        margin-left: auto;
+        margin-right: auto;
+        @media(max-width: 768px){
+            margin-top: 25px;
+        }
+        &-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0 14px;
+        }
+        &-group{
+            width: 413px;
+        }
+        & label{
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+            line-height: 1.5;
+            font-family: 'Poppins-Medium';
+            font-weight: 500;
+        }
+        & input,
+        & textarea{
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            border: 1px solid $colorGrayscale10;
+            outline: none;
+            padding: 18px 32px;
+            @media(max-width: 768px){
+                font-size: rem(14);
+                padding: 14px 16px;
+            }
+        }
+        & textarea{
+            resize: none;
+            height: 178px;
+            margin-bottom: 40px;
+            @media(max-width: 768px){
+                height: 120px;
+            }
+        }
+        & .button{
+            display: block;
+            width: 168px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+}

@@ -1,0 +1,20 @@
+- var items = [{title: 'Jakarta', text: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'},{title: 'Surakarta', text: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'},{title: 'Yogyakarta', text: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'},{title: 'Bandung', text: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'}]
+section.contact-us-page-location
+    .container
+        .contact-us-page-location__inner
+            h2.contact-us-page-location__title.h2 Location
+            .contact-us-page-location__content
+                .contact-us-page-location__find-us
+                    p.contact-us-page-location__subtitle.subtitle Visit Our Stores
+                    p.contact-us-page-location__text Find us at these locations.
+                    dl.contact-us-page-location__mail
+                        dt Email
+                        dd dananz@gmail.com
+                    dl.contact-us-page-location__phone
+                        dt Phone
+                        dd +62 815 002 1000
+                .contact-us-page-location__items
+                    each item in items
+                        .contact-us-page-location__item
+                            .contact-us-page-location__item-title=item.title
+                            .contact-us-page-location__item-text=item.text

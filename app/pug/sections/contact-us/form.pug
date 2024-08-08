@@ -1,0 +1,25 @@
+include ../../layout/button.pug
+section.contact-us-page-contact
+    .container
+        .contact-us-page-contact__inner
+            h2.contact-us-page-contact__title Contact Us
+            p.contact-us-page-contact__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            .contact-us-page-contact__form
+                .contact-us-page-contact__form-wrapper
+                    .contact-us-page-contact__form-group
+                        label(for="first-name") First Name
+                        input(id="first-name" type="text" placeholder="First Name" require='').test
+                    .contact-us-page-contact__form-group
+                        label(for="last-name") Last Name
+                        input(id="last-name" type="text" placeholder="Last Name" require='')
+
+                label(for="email") Email
+                input(id="email" type="email" placeholder="Email" require='')
+
+                label(for="phone") Phone Number
+                input(id="phone" type="text" placeholder="Phone Number" require='')
+
+                label(for="message") Message
+                textarea(id="message" name="" placeholder="Your Message")
+
+                +button('Send Massage', '#2C3878', '#FFFFFF')

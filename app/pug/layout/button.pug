@@ -1,2 +1,2 @@
-mixin button(text, backGroundColor, textColor)
-    a.button(href="#!", style=`background-color: ${backGroundColor}; color: ${textColor}`) #{text}
+mixin button(text, backGroundColor, textColor,link='#!')
+    a.button(href=link, style=`background-color: ${backGroundColor}; color: ${textColor}`) #{text}
